@@ -37,7 +37,7 @@ function App() {
     <div style={containerStyle}>
       <header style={headerStyle}>
         <h1 style={{ margin: 0, fontSize: '2.5rem' }}>
-          🐾 Safari Kids - ¡La mejor aventura para tu look! 🐾
+          🦒 Safari Kids: Peluquería Infantil 🦁
         </h1>
         <p style={{ fontSize: '1.2rem', marginTop: '10px', fontWeight: '300' }}>
           ¡La mejor aventura para el look de tus pequeños exploradores!
