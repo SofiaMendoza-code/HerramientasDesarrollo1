@@ -3,7 +3,8 @@ import React from 'react';
 const estilistas = [
     { id: 101, nombre: "Tía Rosita", especialidad: "Cortes Divertidos", imagen: "🦁" },
     { id: 102, nombre: "Tío Carlos", especialidad: "Peinados Fantasía", imagen: "🦒" },
-    { id: 103, nombre: "Tía Sofía", especialidad: "Especialista en Bebés", imagen: "🦓" }
+    { id: 103, nombre: "Tía Sofía", especialidad: "Especialista en Bebés", imagen: "🦓" },
+    { id: 104, nombre: "Tía Paola", especialidad: "Especialista en Princesas", imagen: "🌸" }
 ];
 
 function Estilistas() {
