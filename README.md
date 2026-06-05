@@ -1,4 +1,4 @@
-# 🐾 Safari Kids: Peluquería Infantil 🦁
+# 🐾 Sistema web creado para la gestión de la peluquería infantil 🦁
 
 ## 📖 Descripción del Proyecto
 **Safari Kids** es una plataforma web desarrollada en **React** diseñada para gestionar los servicios de una peluquería temática para niños. El sistema permite a los padres explorar servicios divertidos, conocer a los estilistas especialistas y reservar citas de "expedición" para sus pequeños exploradores.
