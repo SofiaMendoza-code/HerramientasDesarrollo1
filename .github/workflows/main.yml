@@ -1,0 +1,40 @@
+name: Prueba de Environments
+
+on:
+  push:
+    branches: [ main, dev ]  # Se activa con push a estas ramas
+
+jobs:
+  # ==========================================
+  # JOB 1: Despliegue a STAGING (automático)
+  # ==========================================
+  deploy-staging:
+    runs-on: ubuntu-latest
+    environment: Stating  # <--- Nombre EXACTO como lo creaste
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v4
+
+      - name: Simular despliegue a STAGING
+        run: |
+          echo "🚀 Desplegando en el entorno STAGING..."
+          echo "📂 Rama actual: ${{ github.ref_name }}"
+          echo "✅ Despliegue completado en STAGING"
+
+  # ==========================================
+  # JOB 2: Despliegue a PRODUCCIÓN (con aprobación)
+  # ==========================================
+  deploy-production:
+    runs-on: ubuntu-latest
+    needs: deploy-staging  # Espera a que staging termine
+    if: github.ref == 'refs/heads/main'  # SOLO desde la rama main
+    environment: production  # <--- Nombre EXACTO como lo creaste
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v4
+
+      - name: Simular despliegue a PRODUCCIÓN
+        run: |
+          echo "🔥 Desplegando en el entorno PRODUCCIÓN..."
+          echo "📂 Rama: ${{ github.ref_name }}"
+          echo "✅ Despliegue completado en PRODUCCIÓN"
