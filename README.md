@@ -4,7 +4,7 @@
 **Safari Kids** es una plataforma web desarrollada en **React** diseñada para gestionar los servicios de una peluquería temática para niños. El sistema permite a los padres explorar servicios divertidos, conocer a los estilistas especialistas y reservar citas de "expedición" para sus pequeños exploradores.
 Proyecto desarrollado por el equipo de frontend
 Este proyecto forma parte del curso **Herramientas de Desarrollo** y aplica metodologías ágiles de versionamiento con **Git**.
-xd
+
 ---
 
 ## 🛠️ Tecnologías Utilizadas
